@@ -1,0 +1,70 @@
+{
+    "routes": "file",
+    "utils": {
+        "constant": {
+            "assets": "file",
+            "enum": "file",
+            "typedef": "file"
+        },
+        "custom_widgets": {
+            "app_button": "file"
+        },
+        "helper": {
+            "extension": "file",
+            "helper": "file",
+            "toast": "file"
+        },
+        "theme": {
+            "app_root_scaffold": "file",
+            "color": "file",
+            "theme": "file"
+        }
+    },
+    "services": {
+        "network": {
+            "interceptors": {
+                "logging_interceptor": "file",
+                "token_interceptor": "file"
+            },
+            "base_client": "file",
+            "logger": "file",
+            "network": "file",
+            "response_pagination": "file",
+            "response": "file",
+            "url": "file"
+        },
+        "storage": {
+            "auth_storage": "file",
+            "directory": "file",
+            "register_adapter": "file",
+            "storage_key": "file",
+            "storage": "file"
+        },
+        "notification": {},
+        "location": {
+            "timezone": "file"
+        }
+    },
+    "features": {
+        "authentication": {
+            "bindings": {
+                "login_binding": "file"
+            },
+            "controllers": {
+                "login_controller": "file"
+            },
+            "models": {
+                "request_login": "file"
+            },
+            "repositories": {
+                "authentication_repository": "file"
+            },
+            "views": {
+                "widgets": {
+                    "some_widgets": "file"
+                },
+                "login_view": "file"
+            }
+        }
+    }
+}
