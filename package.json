@@ -6,6 +6,9 @@
   "engines": {
     "vscode": "^1.81.0"
   },
+  "repository": {
+    "url": "https://github.com/khalidrinaldy/flutter-ni-generator"
+  },
   "categories": [
     "Other",
     "Extension Packs"
