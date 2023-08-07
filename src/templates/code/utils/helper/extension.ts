@@ -16,4 +16,13 @@ extension DateFormatter on DateTime {
   String get toRegularDateAndTimeFormat => DateFormat('MMMM dd, yyyy HH:mm:s').format(this);
   String get getTime => DateFormat('HH:mm:s').format(this);
 }
+
+extension Margin on num {
+  Widget get heightMargin => SizedBox(
+        height: toDouble(),
+      );
+  Widget get widthMargin => SizedBox(
+        width: toDouble(),
+      );
+}
 `;
