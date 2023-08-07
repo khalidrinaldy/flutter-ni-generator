@@ -142,7 +142,7 @@ class LoggerUtil {
       } else {
         buffer.write("\n");
         for (int i = 0; i < list.length; i++) {
-          buffer.write("\${getDeepSpace(nextDeep)}"\${list[i]}":");
+          buffer.write("\${getDeepSpace(nextDeep)}\"\${list[i]}\":");
           buffer.write(_convert(object[list[i]], nextDeep, isObject: true));
           if (i < list.length - 1) {
             buffer.write(",");
@@ -172,7 +172,7 @@ class LoggerUtil {
         buffer.write("\${getDeepSpace(deep)}]");
       }
     } else if (object is String) {
-      buffer.write("$object");
+      buffer.write("\"$object\"");
     } else if (object is num || object is bool) {
       buffer.write(object);
     } else {
