@@ -42,3 +42,4 @@ export { loginView } from "./features/authentication/views/login_view";
 export { someWidgets } from "./features/authentication/views/widgets/some_widgets";
 
 export {routes} from "./routes";
+export {initpub} from "./READ_THEN_DELETE";

@@ -1,6 +1,6 @@
 export const authStorage = `
 import 'storage.dart';
-import 'storage_key.dart';;
+import 'storage_key.dart';
 
 class AuthStorage extends AppStorage {
   static final AuthStorage instance = AuthStorage._();

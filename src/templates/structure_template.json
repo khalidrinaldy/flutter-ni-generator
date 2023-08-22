@@ -1,5 +1,6 @@
 {
     "routes": "file",
+    "READ_THEN_DELETE": "file",
     "utils": {
         "constant": {
             "assets": "file",

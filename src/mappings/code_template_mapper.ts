@@ -40,5 +40,6 @@ mappings['login_view'] = t.loginView;
 mappings['login'] = t.login;
 
 mappings['routes'] = t.routes;
+mappings['READ_THEN_DELETE'] = t.initpub;
 
 export default mappings;
