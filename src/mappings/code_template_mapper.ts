@@ -33,9 +33,11 @@ mappings['storage'] = t.storage;
 mappings['login_binding'] = t.loginBinding;
 mappings['login_controller'] = t.loginController;
 mappings['request_login'] = t.requestLogin;
+mappings['user'] = t.user;
 mappings['authentication_repository'] = t.authRepository;
 mappings['some_widgets'] = t.someWidgets;
 mappings['login_view'] = t.loginView;
+mappings['login'] = t.login;
 
 mappings['routes'] = t.routes;
 

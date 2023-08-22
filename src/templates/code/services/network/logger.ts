@@ -3,6 +3,8 @@ import 'dart:developer';
 
 import 'package:flutter/foundation.dart';
 
+//REPLACE NEW LINE ERROR
+//WITH "\\n" !!
 class Logger {
   static void info(
     String message, {
@@ -123,8 +125,8 @@ class LoggerUtil {
         return "Wrong format: $json";
       }
     } catch (e) {
-      Logger.error(error: "\${e.toString().trim()}\njson: $json");
-      return "\${e.toString().trim()}\njson: $json";
+      Logger.error(error: "\${e.toString().trim()}\\njson: $json");
+      return "\${e.toString().trim()}\\njson: $json";
     }
   }
 
@@ -140,16 +142,16 @@ class LoggerUtil {
       if (list.isEmpty) {
         buffer.write("}");
       } else {
-        buffer.write("\n");
+        buffer.write("\\n");
         for (int i = 0; i < list.length; i++) {
-          buffer.write("\${getDeepSpace(nextDeep)}\"\${list[i]}\":");
+          buffer.write("\${getDeepSpace(nextDeep)}\\"\${list[i]}\\":");
           buffer.write(_convert(object[list[i]], nextDeep, isObject: true));
           if (i < list.length - 1) {
             buffer.write(",");
-            buffer.write("\n");
+            buffer.write("\\n");
           }
         }
-        buffer.write("\n");
+        buffer.write("\\n");
         buffer.write("\${getDeepSpace(deep)}}");
       }
     } else if (object is List) {
@@ -160,19 +162,19 @@ class LoggerUtil {
       if (object.isEmpty) {
         buffer.write("]");
       } else {
-        buffer.write("\n");
+        buffer.write("\\n");
         for (int i = 0; i < object.length; i++) {
           buffer.write(_convert(object[i], nextDeep));
           if (i < object.length - 1) {
             buffer.write(",");
-            buffer.write("\n");
+            buffer.write("\\n");
           }
         }
-        buffer.write("\n");
+        buffer.write("\\n");
         buffer.write("\${getDeepSpace(deep)}]");
       }
     } else if (object is String) {
-      buffer.write("\"$object\"");
+      buffer.write("\\"$object\\"");
     } else if (object is num || object is bool) {
       buffer.write(object);
     } else {

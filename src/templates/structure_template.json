@@ -54,7 +54,8 @@
                 "login_controller": "file"
             },
             "models": {
-                "request_login": "file"
+                "request_login": "file",
+                "user": "file"
             },
             "repositories": {
                 "authentication_repository": "file"
@@ -63,7 +64,8 @@
                 "widgets": {
                     "some_widgets": "file"
                 },
-                "login_view": "file"
+                "login_view": "file",
+                "login": "file"
             }
         }
     }

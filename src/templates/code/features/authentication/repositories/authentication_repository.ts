@@ -19,6 +19,21 @@ class AuthenticationRepository {
   
     ///Login
     Future<ApiResponse<LoginResponse>> login({required LoginRequest loginRequest}) async {
-      
+      try {
+        final response = await _client.post(
+          endpoint: NetworkEndpoint.authentication(AuthEndpoint.login),
+          data: FormData.fromMap(
+            loginRequest.toJson(),
+          ),
+        );
+        return ApiResponse(
+          code: response.statusCode,
+          message: response.statusMessage.toString(),
+          data: LoginResponse.fromJson(response.data),
+          error: false,
+        );
+      } on DioException catch (e) {
+        return _client.errorParser<LoginResponse>(e);
+      }
     }
   }`;

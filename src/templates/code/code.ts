@@ -35,7 +35,9 @@ export { storage } from "./services/storage/storage";
 export { loginBinding } from "./features/authentication/bindings/login_binding";
 export { loginController } from "./features/authentication/controllers/login_controller";
 export { requestLogin } from "./features/authentication/models/request_login";
+export { user } from "./features/authentication/models/user";
 export { authRepository } from "./features/authentication/repositories/authentication_repository";
+export { login } from "./features/authentication/views/login";
 export { loginView } from "./features/authentication/views/login_view";
 export { someWidgets } from "./features/authentication/views/widgets/some_widgets";
 

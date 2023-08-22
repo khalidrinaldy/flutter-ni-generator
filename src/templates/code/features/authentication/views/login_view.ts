@@ -1,6 +1,5 @@
 export const loginView = `
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+part of 'login.dart';
 
 class LoginView extends GetView<LoginController> {
   const LoginView({Key? key}) : super(key: key);
