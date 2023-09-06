@@ -41,7 +41,12 @@
             "storage_key": "file",
             "storage": "file"
         },
-        "notification": {},
+        "notification": {
+            "notification": "file",
+            "notification_setting": "file",
+            "base_notification": "file",
+            "app_notification": "file"
+        },
         "location": {
             "timezone": "file"
         }

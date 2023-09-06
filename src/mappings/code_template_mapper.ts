@@ -28,6 +28,10 @@ mappings['directory'] = t.directory;
 mappings['register_adapter'] = t.registerAdapter;
 mappings['storage_key'] = t.storageKey;
 mappings['storage'] = t.storage;
+mappings['notification'] = t.notification;
+mappings['notification_setting'] = t.notificationSetting;
+mappings['base_notification'] = t.baseNotification;
+mappings['app_notification'] = t.appNotification;
 
 //---- Mapping Features
 mappings['login_binding'] = t.loginBinding;

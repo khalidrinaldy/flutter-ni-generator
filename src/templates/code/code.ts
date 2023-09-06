@@ -31,6 +31,11 @@ export { registerAdapter } from "./services/storage/register_adapter";
 export { storageKey } from "./services/storage/storage_key";
 export { storage } from "./services/storage/storage";
 
+export { notification } from "./services/notification/notification";
+export { notificationSetting } from "./services/notification/notification_setting";
+export { baseNotification } from "./services/notification/base_notification";
+export { appNotification } from "./services/notification/app_notification";
+
 //---- Features export
 export { loginBinding } from "./features/authentication/bindings/login_binding";
 export { loginController } from "./features/authentication/controllers/login_controller";
@@ -41,5 +46,5 @@ export { login } from "./features/authentication/views/login";
 export { loginView } from "./features/authentication/views/login_view";
 export { someWidgets } from "./features/authentication/views/widgets/some_widgets";
 
-export {routes} from "./routes";
-export {initpub} from "./READ_THEN_DELETE";
+export { routes } from "./routes";
+export { initpub } from "./READ_THEN_DELETE";
